@@ -1,24 +1,45 @@
-# README
+# RubyOnRails-Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This application is based on postgresql
 
-* Ruby version
+TO DO:-
 
-* System dependencies
+1. create database
+2. seed the Robot data
+3. open postman and trigger post requests to http://127.0.0.1:3000/api/robots/1/orders
+4. you can try with the given parameters
 
-* Configuration
+Request params:- 
 
-* Database creation
+{
+	"commandsss": [ "PLACEaaaa", 0, 0, "NORTH",  "MOVE" ]
+}
 
-* Database initialization
 
-* How to run the test suite
+{
+	"commands": [ "PLACEaaaa", 0, 0, "NORTH",  "MOVE" ]
+}
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+{
+	"commands": [ "PLACE", 0, 0, "NORTH",  "MOVE" ]
+}
 
-* ...
+
+{
+	"commands": [ "PLACE", 0, 0, "NORTH",  "MOVE", "MOVE" ]
+}
+
+
+{
+	"commands": [ "PLACE", 0, 0, "NORTH",  "MOVE", "MOVE", "RIGHT", "MOVE" ]
+}
+
+{
+	"commands": [ "PLACE", 0, 0, "NORTH",  "MOVE", "MOVE", "RIGHT", "MOVE", "MOVE", "MOVE", "MOVE" ]
+}
+
+{
+	"commands": [ "PLACE", 0, 0, "NORTH",  "MOVE", "MOVE", "RIGHT", "MOVE", "MOVE", "MOVE", "MOVE", "MOVE" ]
+}
