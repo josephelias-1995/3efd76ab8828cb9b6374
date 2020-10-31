@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Table cordinate:</strong>
+  <%= @robot.table_cordinate %>
+</p>
+
+<p>
+  <strong>Is placed:</strong>
+  <%= @robot.is_placed %>
+</p>
+
+<%= link_to 'Edit', edit_robot_path(@robot) %> |
+<%= link_to 'Back', robots_path %>

@@ -1,0 +1,15 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: root
+  password: root
+
+development:
+  <<: *default
+  database: robot_order_api_development
+  
